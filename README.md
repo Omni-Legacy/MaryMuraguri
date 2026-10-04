@@ -13,7 +13,7 @@ A responsive single-page web portfolio and interactive Resume/CV built with **Ta
 * **Responsive Mobile Navigation**: Mobile drawer menu and smooth-scroll navigation across all layout views.
 * **Project & Initiative Showcase**: Interactive horizontal scroll slider highlighting administrative modernizations and key operational projects.
 * **Career & Training Timelines**: Structured, responsive timeline grids detailing work history, capacity building and professional memberships[cite: 7].
-* **SEO & OpenGraph Optimized**: Pre-configured JSON-LD structured schema (`Person`), meta tags, and Twitter Cards for search engines and social sharing[cite: 7].
+* **SEO & OpenGraph Optimized**: Pre-configured JSON-LD structured schema (`Person`), meta tags and Twitter Cards for search engines and social sharing[cite: 7].
 
 ---
 
@@ -38,3 +38,5 @@ A responsive single-page web portfolio and interactive Resume/CV built with **Ta
 └── README.md           # Project documentation
 
 ---
+
+© 2026 Mary M. Muraguri. All rights reserved.
