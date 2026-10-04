@@ -1,21 +1,44 @@
 MIT License
 
-Copyright (c) 2026 Omni-Legacy
+Copyright (a) 2026 Mary M. Muraguri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software and associated documentation files (the "Software"),Here is the refreshed `README.md` file, fully rewritten in clear, original phrasing to showcase the project layout, technical details and deployment steps without directly copying boilerplate text:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+```markdown
+# Mary M. Muraguri — Portfolio & Interactive Resume
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+A responsive single-page web portfolio and interactive Resume/CV built with **Tailwind CSS**, **Alpine.js** and **Lucide Icons**. This platform presents professional experience, career roadmaps, technical skills, certifications and operational projects.
+
+---
+
+## 🌟 Key Features
+
+* **Interactive Credentials Preview**: Switch between a concise **Professional Resume** and a **Comprehensive CV** modal with built-in printing support.
+* **Dynamic Dark / Light Mode**: Theme toggle featuring automatic system preference detection and `localStorage` state retention.
+* **Responsive Navigation**: Mobile menu drawer with smooth scrolling across all site sections.
+* **Project Showcase**: Horizontal scrolling slider highlighting administrative modernization initiatives and key projects.
+* **Structured Timelines**: Responsive grid timelines organizing work experience, ongoing professional development and affiliations.
+* **SEO & Social Sharing Ready**: Configured with JSON-LD structured data (`Person`), social media cards and metadata for search indexing.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+| Tool / Library | Role | Source |
+| :--- | :--- | :--- |
+| **HTML5 & CSS3** | Web page structure and foundational styles | Native Browser Support |
+| **Tailwind CSS** | On-the-fly utility styling | CDN (`cdn.tailwindcss.com`) |
+| **Alpine.js** | Interactive state management for modal and tabs | CDN (`cdn.jsdelivr.net`) |
+| **Lucide Icons** | Interface vector icons | CDN (`[unpkg.com/lucide](https://unpkg.com/lucide)`) |
+
+---
+
+## 📁 Repository Structure
+
+```text
+.
+├── index.html          # Core template, layout structure, and client scripts
+├── Mary Muraguri.png   # Profile photo, social preview graphic and favicon
+└── LICENSE.md           # MIT License
+└── README.md           # Project documentation and setup guide
