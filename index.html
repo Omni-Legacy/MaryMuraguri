@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & METADATA -->
+  <title>Mary M. Muraguri - Administrative Professional & Customer Service Specialist</title>
+  <meta name="description" content="Mary M. Muraguri — Experienced Administrative Assistant, Office Administrator, and Customer Service Specialist based in Nairobi, Kenya." />
+  <meta name="keywords" content="Mary Muraguri, Mary Muthoni Muraguri, Office Administrator, Administrative Assistant, Customer Service Specialist, Front Desk Officer, Nairobi Kenya" />
+  <meta name="author" content="Mary M. Muraguri" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://marymuraguri.dev/" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mary M. Muraguri" />
+  <meta property="og:description" content="Official portfolio and interactive Resume/CV. Experienced Office Administrator, Executive Assistant, and Front Office Specialist." />
+  <meta property="og:image" content="Mary.jpg" />
+  <meta property="og:url" content="https://marymuraguri.dev/" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mary M. Muraguri - Administrative Professional & Office Administrator" />
+  <meta name="twitter:description" content="Administrative Assistant, Customer Service Representative, and Office Administrator." />
+  <meta name="twitter:image" content="Mary.jpg" />
+
+  <!-- Favicon References -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Tailwind CSS CDN & Alpine.js -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Print Styles for Reviewable / Printable Resume & CV View */
+    @media print {
+      body {
+        background-color: white !important;
+        color: black !important;
+      }
+      header, footer, #theme-toggle, #mobile-menu-btn, .no-print {
+        display: none !important;
+      }
+      .print-shadow-none {
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+
+    /* Embedded Training Section Styles */
+    .section-training {
+      padding: 60px 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    .container-training {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 768px) {
+      .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .timeline-card {
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .timeline-card:hover {
+      transform: translateY(-2px);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .card-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .card-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+    .badge-primary { background: #dbeafe; color: #1e40af; }
+    .badge-secondary { background: #e0e7ff; color: #3730a3; }
+    .badge-success { background: #dcfce7; color: #166534; }
+    .badge-warning { background: #fef3c7; color: #92400e; }
+    .badge-info { background: #f3e8ff; color: #6b21a8; }
+    
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 5px 0;
+    }
+    .card-issuer {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .card-details {
+      padding-left: 18px;
+      margin: 0;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .card-details li {
+      margin-bottom: 6px;
+    }
+
+    /* Custom Hide Scrollbar for Horizontal Sliders */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mary M. Muraguri",
+    "jobTitle": "Administrative Assistant & Front Office Specialist",
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Diani Sea Lodge"
+      },
+      {
+        "@type": "Organization",
+        "name": "Self-Employed / Freelance Consultancy"
+      }
+    ],
+    "almaMater": "Kenyatta University",
+    "image": "Mary.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/mary-muraguri"
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans antialiased selection:bg-indigo-500 selection:text-white" x-data="{ docModal: false, activeTab: 'cv' }">
+
+  <!-- Skip to main content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-50 px-4 py-2 bg-indigo-600 text-white rounded-md shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="flex items-center gap-3 group focus:outline-none">
+        <div class="relative w-10 h-10 rounded-full overflow-hidden border-2 border-indigo-600 group-hover:border-indigo-500 shadow-md group-hover:shadow-[0_0_12px_rgba(99,102,241,0.6)] transition-all duration-300">
+          <img src="Mary.jpg" alt="Mary M. Muraguri - Photo" class="w-full h-full object-cover" />
+        </div>
+        <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-400 group-hover:drop-shadow-[0_0_8px_rgba(129,140,248,0.8)] transition-all duration-300">
+          Mary <span class="text-indigo-600 dark:text-indigo-400">Muraguri</span>
+        </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Career</a>
+        <a href="#skills" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#certifications" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Certifications</a>
+        <a href="#affiliation" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Affiliation</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#trainings-workshops" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Trainings</a>
+        <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <button
+          id="theme-toggle"
+          aria-label="Toggle light and dark theme"
+          class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:ring-2 focus:ring-indigo-500"
+        >
+          <svg id="sun-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg id="moon-icon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <button
+          @click="docModal = true"
+          class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+        >
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          View Resume & CV
+        </button>
+
+        <button
+          id="mobile-menu-btn"
+          aria-label="Open menu"
+          class="md:hidden p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+        >
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <nav id="mobile-menu" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-6 pt-3 pb-6 space-y-3">
+      <a href="#about" class="mobile-link block text-base font-medium">About</a>
+      <a href="#experience" class="mobile-link block text-base font-medium">Career</a>
+      <a href="#skills" class="mobile-link block text-base font-medium">Skills</a>
+      <a href="#certifications" class="mobile-link block text-base font-medium">Certifications</a>
+      <a href="#affiliation" class="mobile-link block text-base font-medium">Affiliation</a>
+      <a href="#projects" class="mobile-link block text-base font-medium">Projects</a>
+      <a href="#trainings-workshops" class="mobile-link block text-base font-medium">Trainings</a>
+      <a href="#contact" class="mobile-link block text-base font-medium">Contact</a>
+      <button @click="docModal = true;" class="mobile-link inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 text-sm font-medium text-white bg-indigo-600 rounded-lg shadow-md mt-2">
+        <i data-lucide="file-text" class="w-4 h-4"></i>
+        View Resume & CV
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="relative flex items-center justify-center px-4 sm:px-6 py-16 lg:py-24 overflow-hidden">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 dark:bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 lg:gap-16">
+        
+        <div class="flex-1 space-y-6 text-center md:text-left animate-fade-in-up">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 rounded-full text-xs sm:text-sm font-semibold tracking-wide border border-indigo-200 dark:border-indigo-500/20">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            Office Administrator • Customer Service Specialist
+          </div>
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-slate-900 dark:text-white">
+            Optimizing <br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">Administrative Excellence</span>
+          </h1>
+          <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto md:mx-0">
+            Accomplished Administrative Assistant, Front Office Specialist, and Customer Service Professional with over 6 years of expertise in workflow optimization, client relations, and operational coordination.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
+            <button @click="docModal = true; activeTab = 'resume';" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-lg shadow-lg shadow-indigo-600/25 hover:shadow-indigo-600/40 transition-all flex items-center gap-2">
+              <i data-lucide="eye" class="w-4 h-4"></i> Interactive Resume
+            </button>
+            <button @click="docModal = true; activeTab = 'cv';" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-medium rounded-lg border border-slate-300 dark:border-slate-700 transition-all flex items-center gap-2">
+              <i data-lucide="file-badge" class="w-4 h-4"></i> Comprehensive CV
+            </button>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center justify-center md:justify-start gap-y-2 gap-x-6 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> muragurimary13@gmail.com</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> +254 705 502 930</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> Nairobi, Kenya</span>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-600 rounded-2xl blur-lg opacity-40 group-hover:opacity-80 transition duration-500"></div>
+          <div class="relative bg-white dark:bg-slate-900 p-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl">
+            <img 
+              src="Mary.jpg" 
+              alt="Mary M. Muraguri - Portrait" 
+              class="w-52 h-64 sm:w-60 sm:h-76 object-cover rounded-xl border border-slate-200 dark:border-slate-800 shadow-inner"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXECUTIVE SUMMARY & CAREER OBJECTIVE SECTION -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Professional Profile</h2>
+          <p class="text-slate-600 dark:text-slate-400">Office Administrator • Customer Support & Operations Specialist</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+          <!-- Executive Summary -->
+          <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between hover:border-indigo-500/40 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+                <i data-lucide="user-check" class="w-6 h-6 text-indigo-600 dark:text-indigo-400"></i>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Executive Summary</h3>
+              </div>
+              <p class="text-sm">
+                An accomplished, highly organized, and results-driven Administrative Assistant and Customer Support Professional with over 6 years of experience across corporate, hospitality, and educational sectors. Proficient in executive schedule management, front office administration, record-keeping, and high-volume client engagement.
+              </p>
+              <p class="text-sm">
+                Demonstrates exceptional interpersonal communication, crisis resolution, and digital workflow tools expertise (MS Office Suite, CRM platforms, ERP administrative modules). Known for fostering collaborative team cultures, streamlining operational costs, and optimizing customer satisfaction metrics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between hover:border-indigo-500/40 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
+                <i data-lucide="target" class="w-6 h-6 text-indigo-600 dark:text-indigo-400"></i>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Career Objective</h3>
+              </div>
+              <p class="text-sm">
+                To secure a challenging administrative or operations role within a dynamic organization where I can leverage my expertise in executive secretarial management, customer relationship optimization, and office administrative systems to enhance organizational productivity and service excellence.
+              </p>
+              <p class="text-sm">
+                Seeking to drive administrative performance through modern office technology, rigorous records control, and continuous process improvements that support executive leadership and strategic goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE ROADMAP SECTION -->
+    <section id="experience" class="py-20 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Professional Career Roadmap</h2>
+          <p class="text-slate-600 dark:text-slate-400">An interactive journey across office management, front desk excellence, customer relations, and business administration.</p>
+        </div>
+
+        <!-- Interactive Roadmap Container -->
+        <div class="relative border-l-2 border-indigo-500/40 ml-4 md:ml-32 space-y-12">
+
+          <!-- Roadmap Node 1: Freelance Administrative & Operations Consultant -->
+          <div class="relative pl-6 md:pl-10 group">
+            <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950 group-hover:scale-125 transition-transform"></div>
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-4">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+                <div>
+                  <span class="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 rounded-full">
+                    Executive Consultancy & Services
+                  </span>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Administrative & Operations Consultant</h3>
+                  <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Self-Employed / Freelance Services</p>
+                </div>
+                <span class="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold w-max">
+                  Jan 2024 – Present • Nairobi, Kenya
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+                <li>Provide remote and on-site executive virtual assistance, scheduling calendar management, and client inquiry resolution for small businesses and independent professionals.</li>
+                <li>Design standardized electronic filing procedures, inventory tracking matrices, and client feedback logging systems.</li>
+                <li>Manage external correspondence, invoice tracking, and customer retention workflows across diverse service sectors.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Roadmap Node 2: Diani Sea Lodge -->
+          <div class="relative pl-6 md:pl-10 group">
+            <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950 group-hover:scale-125 transition-transform"></div>
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-4">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+                <div>
+                  <span class="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 rounded-full">
+                    Hospitality Operations & Guest Relations
+                  </span>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Front Office Assistant</h3>
+                  <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Diani Sea Lodge</p>
+                </div>
+                <span class="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold w-max">
+                  Jun 2022 – Dec 2023 • Ukunda / Kwale, Kenya
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+                <li>Managed front desk operations, welcoming international and domestic guests while handling high-volume PBX switchboard inquiries.</li>
+                <li>Processed guest reservations, room check-in/check-out procedures, billing reconciliations, and currency exchange accurately.</li>
+                <li>Resolved client complaints promptly with a high satisfaction rating and coordinated inter-departmental logistics with housekeeping and maintenance teams.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Roadmap Node 3: Apex Customer Care & Solutions -->
+          <div class="relative pl-6 md:pl-10 group">
+            <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950 group-hover:scale-125 transition-transform"></div>
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-4">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+                <div>
+                  <span class="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 rounded-full">
+                    Corporate Customer Support
+                  </span>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Customer Service Representative</h3>
+                  <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Apex Customer Solutions</p>
+                </div>
+                <span class="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold w-max">
+                  Mar 2021 – May 2022 • Nairobi, Kenya
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+                <li>Handled over 80+ daily customer inquiries across phone, live chat, and email channels regarding account services and troubleshooting.</li>
+                <li>Maintained accurate customer contact records in CRM systems, adhering strictly to service level agreements (SLAs).</li>
+                <li>Assisted in training 5 junior support agents on corporate service protocols and query escalation pathways.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Roadmap Node 4: Nairobi Business Centre -->
+          <div class="relative pl-6 md:pl-10 group">
+            <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950 group-hover:scale-125 transition-transform"></div>
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-4">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+                <div>
+                  <span class="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 rounded-full">
+                    Office Administration & Secretarial
+                  </span>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Administrative Assistant</h3>
+                  <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Nairobi Business Centre</p>
+                </div>
+                <span class="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold w-max">
+                  Jul 2019 – Feb 2021 • Nairobi, Kenya
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+                <li>Managed executive calendars, coordinated boardroom bookings, and organized travel itineraries for senior leadership.</li>
+                <li>Prepared meeting agendas, recorded precise minutes, and distributed action items to team leads promptly.</li>
+                <li>Oversaw office supply inventories, vendor agreements, and petty cash disbursements with 100% audit compliance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Roadmap Node 5: Kenyatta University Administrative Attachment -->
+          <div class="relative pl-6 md:pl-10 group">
+            <div class="absolute -left-[11px] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950 group-hover:scale-125 transition-transform"></div>
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all space-y-4">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-3">
+                <div>
+                  <span class="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-300 rounded-full">
+                    Public Academic Administration
+                  </span>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Administrative Attaché</h3>
+                  <p class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm">Kenyatta University – Main Campus</p>
+                </div>
+                <span class="text-xs px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold w-max">
+                  May 2018 – Aug 2018 • Nairobi, Kenya
+                </span>
+              </div>
+              <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+                <li>Assisted in student registry record-keeping, transcript archival, and departmental document digitization.</li>
+                <li>Handled student and visitor desk inquiries, routing correspondence to respective faculty heads efficiently.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SKILLS & TECHNICAL CAPABILITIES -->
+    <section id="skills" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Core Competencies & Tools</h2>
+          <p class="text-slate-600 dark:text-slate-400">Specialized capabilities across office management, customer care, and digital software suites.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <i data-lucide="briefcase" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Office Administration</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Executive calendar scheduling, travel coordination, meeting minuting, inventory control, vendor management, and petty cash handling.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Front Office & Guest Relations</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              PBX telephone operation, reception management, visitor logging, client onboarding, service escalation, and crisis communication.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all">
+            <div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <i data-lucide="laptop" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Digital Tools & Productivity</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Microsoft Office 365 (Word, Excel, PowerPoint, Outlook), Google Workspace, CRM platforms (Zendesk, Salesforce), and ERP billing modules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="py-20 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Certifications & Training</h2>
+          <p class="text-slate-600 dark:text-slate-400">Validated professional credentials across business administration, customer experience, and digital productivity tools.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Kenyatta University Degree -->
+          <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Kenyatta University</span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Bachelor of Arts / Business Studies</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Comprehensive training in corporate communication, organizational behavior, public relations, and business administration.
+              </p>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-400 pt-3 border-t border-slate-100 dark:border-slate-800/80">Graduated 2019</span>
+          </div>
+
+          <!-- Customer Service Excellence -->
+          <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Corporate Academy</span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Certified Customer Experience Professional</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Advanced certification in client retention dynamics, conflict resolution, telephone etiquette, and multi-channel support operations.
+              </p>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-400 pt-3 border-t border-slate-100 dark:border-slate-800/80">2022</span>
+          </div>
+
+          <!-- MS Office Specialist -->
+          <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Computer Institute</span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Microsoft Office Specialist (MOS)</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Advanced proficiency certificate covering Word document formatting, Excel spreadsheet modeling, PowerPoint design, and Outlook administration.
+              </p>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-400 pt-3 border-t border-slate-100 dark:border-slate-800/80">2020</span>
+          </div>
+
+          <!-- Digital Records Management -->
+          <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Nairobi Administrative Institute</span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Records & Electronic Document Management</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Specialized coursework in digital archiving, data confidentiality compliance, office workflow design, and electronic registry setups.
+              </p>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-400 pt-3 border-t border-slate-100 dark:border-slate-800/80">2021</span>
+          </div>
+
+          <!-- Front Desk Management -->
+          <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Hospitality Training Board</span>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Front Office Operations Certificate</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Intensive certification on Opera PMS/Fidelio system navigation, VIP guest handling, billing accuracy, and switchboard protocols.
+              </p>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-400 pt-3 border-t border-slate-100 dark:border-slate-800/80">2022</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL MEMBERSHIP / AFFILIATION SECTION -->
+    <section id="affiliation" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Professional Membership & Affiliation</h2>
+          <p class="text-slate-600 dark:text-slate-400">Active professional associations and industry networks.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 rounded">
+                Professional Body
+              </span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Kenya Institute of Management (KIM)</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Associate Professional Member. Specializing in Administrative Leadership, Operational Excellence & Corporate Governance.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-slate-500 pt-3 border-t border-slate-200 dark:border-slate-800">
+              Active Member (2022 – Present)
+            </span>
+          </div>
+
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 rounded">
+                Industry Network
+              </span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Customer Experience Professionals Kenya (CXPK)</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Active Member in customer care standards, service benchmark developments, and corporate secretarial forums in East Africa.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-slate-500 pt-3 border-t border-slate-200 dark:border-slate-800">
+              Active Member (2021 – Present)
+            </span>
+          </div>
+
+          <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+            <div class="space-y-2">
+              <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 rounded">
+                Alumni Network
+              </span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Kenyatta University Alumni Association</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Lifetime Alumni Member participating in professional mentorship programs and institutional administrative workshops.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-slate-500 pt-3 border-t border-slate-200 dark:border-slate-800">
+              Lifetime Member (2019 – Present)
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- FEATURED PROJECTS & SYSTEMS SECTION WITH SLIDER -->
+    <section id="projects" class="py-20 bg-slate-50/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto space-y-12" x-data="{
+        scrollLeft() { $refs.slider.scrollBy({ left: -340, behavior: 'smooth' }) },
+        scrollRight() { $refs.slider.scrollBy({ left: 340, behavior: 'smooth' }) }
+      }">
+
+        <!-- Section Header with Slider Navigation Controls -->
+        <div class="relative flex items-center justify-center">
+          
+          <!-- Centered Text Header -->
+          <div class="space-y-2 max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Key Projects & Admin Initiatives</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Categorized showcase of administrative modernizations, front desk standardizations, and customer support implementations.</p>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <div class="mt-4 sm:mt-0 sm:absolute sm:right-0 flex items-center gap-2">
+            <button @click="scrollLeft()" aria-label="Slide Left" class="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all shadow-sm">
+              <i data-lucide="chevron-left" class="w-5 h-5"></i>
+            </button>
+            <button @click="scrollRight()" aria-label="Slide Right" class="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all shadow-sm">
+              <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+        </div>
+    
+        <!-- Horizontal Carousel / Slider -->
+        <div x-ref="slider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2 pt-2">
+    
+          <!-- 1. Digital Document Archiving System -->
+          <div class="min-w-[290px] sm:min-w-[340px] max-w-[340px] snap-start p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 flex flex-col justify-between hover:shadow-xl transition-all shrink-0">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-2 flex-wrap">
+                <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 rounded">
+                  Digital Administrative Infrastructure
+                </span>
+                <span class="text-[10px] font-semibold text-slate-500 dark:text-slate-400">2024</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Cloud Document Archiving Matrix</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Spearheaded the transition from paper-based file systems to structured Google Workspace cloud archives, reducing retrieval times by 65%.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-slate-500">Corporate & SMB Client Workflow</span>
+              <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 rounded-full">Implemented</span>
+            </div>
+          </div>
+    
+          <!-- 2. Hospitality Guest Relations SOP Redesign -->
+          <div class="min-w-[290px] sm:min-w-[340px] max-w-[340px] snap-start p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 flex flex-col justify-between hover:shadow-xl transition-all shrink-0">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-2 flex-wrap">
+                <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-300 rounded">
+                  Hospitality Standard Operating Procedures
+                </span>
+                <span class="text-[10px] font-semibold text-slate-500 dark:text-slate-400">2023</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Front Office Check-In SOP Revamp</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Designed streamlined guest check-in checklists at Diani Sea Lodge, elevating average guest satisfaction ratings by 20%.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-slate-500">Diani Sea Lodge</span>
+              <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-400 rounded-full">Active Standard</span>
+            </div>
+          </div>
+    
+          <!-- 3. Customer Escalation Protocols -->
+          <div class="min-w-[290px] sm:min-w-[340px] max-w-[340px] snap-start p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 flex flex-col justify-between hover:shadow-xl transition-all shrink-0">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-2 flex-wrap">
+                <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 rounded">
+                  Customer Operations Framework
+                </span>
+                <span class="text-[10px] font-semibold text-slate-500 dark:text-slate-400">2022</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Call Center Query Escalation Matrix</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Formulated an internal multi-tier query escalation pathway using Zendesk ticketing to resolve customer complaints within 24 hours.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-slate-500">Apex Customer Solutions</span>
+              <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 rounded-full">Completed</span>
+            </div>
+          </div>
+    
+          <!-- 4. Executive Meeting & Conference Portal -->
+          <div class="min-w-[290px] sm:min-w-[340px] max-w-[340px] snap-start p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 flex flex-col justify-between hover:shadow-xl transition-all shrink-0">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-2 flex-wrap">
+                <span class="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 rounded">
+                  Corporate Logistics & Facility
+                </span>
+                <span class="text-[10px] font-semibold text-slate-500 dark:text-slate-400">2020</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Boardroom Scheduling System</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Centralized multi-tenant boardroom calendar bookings and catering logistics, completely eliminating double-booking incidents.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+              <span class="text-xs font-semibold text-slate-500">Nairobi Business Centre</span>
+              <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-400 rounded-full">Deployed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAININGS, WORKSHOPS & SEMINARS SECTION -->
+    <section id="trainings-workshops" class="section-training bg-white dark:bg-slate-900">
+      <div class="container-training">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Trainings, Workshops &amp; Seminars</h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Professional development, continuous capacity building, and administrative workshops.</p>
+        </div>
+
+        <div class="timeline-grid">
+          
+          <!-- Workshop 1 -->
+          <div class="timeline-card bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+            <div class="card-header">
+              <span class="card-date text-indigo-600 dark:text-indigo-400">Oct 2024</span>
+              <span class="card-badge badge-primary">Workshop</span>
+            </div>
+            <h3 class="card-title text-slate-900 dark:text-white">Advanced Digital Office Tools & AI Productivity</h3>
+            <div class="card-issuer text-slate-600 dark:text-slate-400">Nairobi Executive Professional Seminars</div>
+            <ul class="card-details text-slate-600 dark:text-slate-300">
+              <li>Trained on AI-assisted document drafting, automated calendar scheduling tools, and cloud storage management.</li>
+              <li>Explored automated reporting tools for executive administrative support.</li>
+            </ul>
+          </div>
+
+          <!-- Workshop 2 -->
+          <div class="timeline-card bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+            <div class="card-header">
+              <span class="card-date text-indigo-600 dark:text-indigo-400">Mar 2023</span>
+              <span class="card-badge badge-success">Seminar</span>
+            </div>
+            <h3 class="card-title text-slate-900 dark:text-white">Customer Relationship Management & Conflict Resolution</h3>
+            <div class="card-issuer text-slate-600 dark:text-slate-400">Coast Hospitality & Service Excellence Forum</div>
+            <ul class="card-details text-slate-600 dark:text-slate-300">
+              <li>Participated in intensive conflict de-escalation workshops and customer psychology seminars.</li>
+              <li>Mastered multi-channel service recovery techniques for demanding operational environments.</li>
+            </ul>
+          </div>
+
+          <!-- Workshop 3 -->
+          <div class="timeline-card bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+            <div class="card-header">
+              <span class="card-date text-indigo-600 dark:text-indigo-400">Nov 2021</span>
+              <span class="card-badge badge-info">Capacity Building</span>
+            </div>
+            <h3 class="card-title text-slate-900 dark:text-white">Records Management & Data Privacy Compliance</h3>
+            <div class="card-issuer text-slate-600 dark:text-slate-400">Kenya Administrative Officers Association</div>
+            <ul class="card-details text-slate-600 dark:text-slate-300">
+              <li>Comprehensive training on the Kenya Data Protection Act 2019 and corporate record confidentiality guidelines.</li>
+              <li>Practical exercises on secure document retention schedules and registry audits.</li>
+            </ul>
+          </div>
+
+          <!-- Workshop 4 -->
+          <div class="timeline-card bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+            <div class="card-header">
+              <span class="card-date text-indigo-600 dark:text-indigo-400">Aug 2019</span>
+              <span class="card-badge badge-secondary">Corporate Training</span>
+            </div>
+            <h3 class="card-title text-slate-900 dark:text-white">Effective Executive Secretarial & Minute-Taking Skills</h3>
+            <div class="card-issuer text-slate-600 dark:text-slate-400">Nairobi Corporate Training Center</div>
+            <ul class="card-details text-slate-600 dark:text-slate-300">
+              <li>Focused on real-time board meeting minuting, executive agenda planning, and post-meeting follow-ups.</li>
+              <li>Practiced executive email correspondence standardizations and protocol etiquette.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-900 text-white px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto space-y-12 text-center">
+        <div class="space-y-3">
+          <h2 class="text-3xl font-bold tracking-tight">Get In Touch</h2>
+          <p class="text-slate-400 max-w-xl mx-auto text-sm">
+            Whether you are looking for an experienced Office Administrator, Executive Assistant, or Front Desk Lead, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 pt-4">
+          <a href="mailto:muragurimary13@gmail.com" class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-all space-y-2 flex flex-col items-center">
+            <i data-lucide="mail" class="w-6 h-6 text-indigo-400"></i>
+            <span class="text-xs font-semibold text-slate-400 uppercase">Email</span>
+            <span class="text-xs sm:text-sm font-medium text-white break-all">muragurimary13@gmail.com</span>
+          </a>
+
+          <a href="tel:+254705502930" class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-all space-y-2 flex flex-col items-center">
+            <i data-lucide="phone" class="w-6 h-6 text-indigo-400"></i>
+            <span class="text-xs font-semibold text-slate-400 uppercase">Phone</span>
+            <span class="text-xs sm:text-sm font-medium text-white">+254 705 502 930</span>
+          </a>
+
+          <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 transition-all space-y-2 flex flex-col items-center">
+            <i data-lucide="map-pin" class="w-6 h-6 text-indigo-400"></i>
+            <span class="text-xs font-semibold text-slate-400 uppercase">Location</span>
+            <span class="text-xs sm:text-sm font-medium text-white">Nairobi, Kenya</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800/80 text-xs text-center">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Mary M. Muraguri. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= RESUME & CV INTERACTIVE MODAL ================= -->
+  <div 
+    x-show="docModal" 
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-slate-950/80 backdrop-blur-md"
+    style="display: none;"
+  >
+    <div 
+      @click.away="docModal = false"
+      class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden"
+    >
+      <!-- Modal Header with Tab Navigation -->
+      <div class="p-4 sm:p-6 border-b border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 dark:bg-slate-950">
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 rounded-lg">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mary M. Muraguri — Credentials View</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Switch between standard Professional Resume and Comprehensive CV</p>
+          </div>
+        </div>
+
+        <!-- Tab Controls & Close Button -->
+        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+          <div class="flex p-1 bg-slate-200 dark:bg-slate-800 rounded-xl text-xs font-semibold">
+            <button 
+              @click="activeTab = 'resume'" 
+              :class="activeTab === 'resume' ? 'bg-indigo-600 text-white shadow' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
+              class="px-3.5 py-1.5 rounded-lg transition-all"
+            >
+              Resume
+            </button>
+            <button 
+              @click="activeTab = 'cv'" 
+              :class="activeTab === 'cv' ? 'bg-indigo-600 text-white shadow' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
+              class="px-3.5 py-1.5 rounded-lg transition-all"
+            >
+              Comprehensive CV
+            </button>
+          </div>
+
+          <button 
+            @click="window.print()" 
+            class="p-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            title="Print Document"
+          >
+            <i data-lucide="printer" class="w-5 h-5"></i>
+          </button>
+
+          <button 
+            @click="docModal = false" 
+            class="p-2 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors"
+          >
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body - Document Display Area -->
+      <div class="flex-1 overflow-y-auto p-6 sm:p-10 space-y-8 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 text-sm">
+
+        <!-- RESUME VIEW TAB -->
+        <div x-show="activeTab === 'resume'" class="space-y-8 max-w-3xl mx-auto">
+          <!-- Document Header -->
+          <div class="border-b border-slate-200 dark:border-slate-800 pb-6 text-center space-y-2">
+            <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">MARY MUTHONI MURAGURI</h1>
+            <p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Administrative Assistant & Customer Support Specialist</p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500 dark:text-slate-400 pt-2">
+              <span>Nairobi, Kenya</span> •
+              <span>+254 705 502 930</span> •
+              <span>muragurimary13@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="space-y-2">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">Professional Summary</h2>
+            <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+              Enthusiastic and results-oriented Administrative Professional with over 6 years of experience managing front office operations, executive scheduling, customer care logistics, and client communication. Proven ability to optimize office administrative flows, maintain complex record databases, and deliver top-tier guest experiences.
+            </p>
+          </div>
+
+          <!-- Key Work Experience -->
+          <div class="space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">Key Experience</h2>
+            
+            <div class="space-y-1">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-xs">
+                <span>Administrative & Operations Consultant — Self-Employed</span>
+                <span>2024 – Present</span>
+              </div>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 italic">Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-xs text-slate-600 dark:text-slate-300 space-y-1 pt-1">
+                <li>Manage virtual executive scheduling, email inquiries, and invoicing operations for local businesses.</li>
+                <li>Design standardized digital record archiving matrices using cloud platforms.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-xs">
+                <span>Front Office Assistant — Diani Sea Lodge</span>
+                <span>2022 – 2023</span>
+              </div>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 italic">Ukunda / Kwale, Kenya</p>
+              <ul class="list-disc list-inside text-xs text-slate-600 dark:text-slate-300 space-y-1 pt-1">
+                <li>Welcomed guests, executed check-in/out procedures, handled cash/card transactions, and managed PBX calls.</li>
+                <li>Resolved guest feedback efficiently, achieving consistently high client satisfaction scores.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-1">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-xs">
+                <span>Customer Service Representative — Apex Customer Solutions</span>
+                <span>2021 – 2022</span>
+              </div>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 italic">Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-xs text-slate-600 dark:text-slate-300 space-y-1 pt-1">
+                <li>Processed 80+ daily inquiries across omni-channel support systems adhering to strict SLAs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education & Credentials -->
+          <div class="space-y-3">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">Education & Credentials</h2>
+            <div class="flex justify-between text-xs">
+              <span class="font-semibold text-slate-900 dark:text-white">Bachelor of Arts / Business Studies — Kenyatta University</span>
+              <span class="text-slate-500">2019</span>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span class="font-semibold text-slate-900 dark:text-white">Certified Customer Experience Professional</span>
+              <span class="text-slate-500">2022</span>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span class="font-semibold text-slate-900 dark:text-white">Microsoft Office Specialist (MOS)</span>
+              <span class="text-slate-500">2020</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPREHENSIVE CV VIEW TAB -->
+        <div x-show="activeTab === 'cv'" class="space-y-10 max-w-3xl mx-auto">
+          <!-- Document Header -->
+          <div class="border-b-2 border-slate-900 dark:border-slate-100 pb-6 text-center space-y-3">
+            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">CURRICULUM VITAE</h1>
+            <h2 class="text-xl font-bold text-indigo-600 dark:text-indigo-400">MARY MUTHONI MURAGURI</h2>
+            <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest">Office Administrator • Executive Assistant • Customer Relations Specialist</p>
+            <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200 dark:border-slate-800">
+              <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-indigo-500"></i> Nairobi, Kenya</span>
+              <span class="flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5 text-indigo-500"></i> +254 705 502 930</span>
+              <span class="flex items-center gap-1"><i data-lucide="mail" class="w-3.5 h-3.5 text-indigo-500"></i> muragurimary13@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Detailed Personal Profile & Bio -->
+          <div class="space-y-3">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">1. Personal Profile & Objectives</h3>
+            <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+              A highly meticulous, adaptable, and personable administrative professional with over six years of comprehensive experience spanning front office operations, executive secretarial management, customer service delivery, and office records management. Possesses strong analytical, organizational, and interpersonal capabilities with a proven track record of maintaining smooth office operations, coordinating high-level schedules, and managing key stakeholder relationships across both corporate and hospitality settings.
+            </p>
+          </div>
+
+          <!-- Academic Qualifications -->
+          <div class="space-y-3">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">2. Education & Academic Background</h3>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white">
+                <span>Kenyatta University, Nairobi, Kenya</span>
+                <span>2015 – 2019</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300">Bachelor of Arts / Business Studies — Focus on Organizational Administration & Public Relations.</p>
+              
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white pt-2">
+                <span>Kenya Certificate of Secondary Education (KCSE)</span>
+                <span>2011 – 2014</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300">Secondary Education Certificate.</p>
+            </div>
+          </div>
+
+          <!-- Detailed Work History -->
+          <div class="space-y-6">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">3. Detailed Professional Experience</h3>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-sm">
+                <span>Administrative & Operations Consultant</span>
+                <span>Jan 2024 – Present</span>
+              </div>
+              <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Self-Employed / Freelance Services • Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1.5 pt-1">
+                <li>Provide executive support services to remote corporate clients, managing executive calendars and client communication.</li>
+                <li>Design customized digital filing structures using cloud platforms, securing document confidentiality and quick retrieval.</li>
+                <li>Oversee client invoice generation, payment tracking, and budget reconciliation reports for small business clients.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-sm">
+                <span>Front Office Assistant</span>
+                <span>Jun 2022 – Dec 2023</span>
+              </div>
+              <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Diani Sea Lodge • Ukunda / Kwale, Kenya</p>
+              <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1.5 pt-1">
+                <li>Managed front desk operations for a premier coastal resort, catering to diverse international guests.</li>
+                <li>Handled switchboard communications, booking registrations, guest check-in/out, and multi-currency billing.</li>
+                <li>Collaborated closely with housekeeping, kitchen, and security teams to resolve guest requests swiftly.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-sm">
+                <span>Customer Service Representative</span>
+                <span>Mar 2021 – May 2022</span>
+              </div>
+              <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Apex Customer Solutions • Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1.5 pt-1">
+                <li>Answered inbound phone calls, emails, and live chat requests with high courtesy and efficiency.</li>
+                <li>Logged detailed interaction notes in CRM databases and escalated technical tickets to tier-two support.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-sm">
+                <span>Administrative Assistant</span>
+                <span>Jul 2019 – Feb 2021</span>
+              </div>
+              <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Nairobi Business Centre • Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1.5 pt-1">
+                <li>Managed office supply inventories, vendor orders, executive schedule calendars, and boardroom reservations.</li>
+                <li>Recorded minutes during staff and management meetings, producing clear action matrices.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-900 dark:text-white text-sm">
+                <span>Administrative Attaché</span>
+                <span>May 2018 – Aug 2018</span>
+              </div>
+              <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Kenyatta University – Main Campus • Nairobi, Kenya</p>
+              <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1.5 pt-1">
+                <li>Supported registry document filing, student inquiry handling, and general secretarial tasks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Professional Certifications & Referees -->
+          <div class="space-y-4">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 pb-1">4. Certifications & Referees</h3>
+            
+            <div class="space-y-1 text-xs">
+              <p class="font-bold text-slate-900 dark:text-white">• Certified Customer Experience Professional (CCXP) — 2022</p>
+              <p class="font-bold text-slate-900 dark:text-white">• Microsoft Office Specialist (MOS) Certification — 2020</p>
+              <p class="font-bold text-slate-900 dark:text-white">• Electronic Records & Office Management Certificate — 2021</p>
+            </div>
+
+            <div class="pt-4 space-y-2">
+              <h4 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Referees</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 italic">Available upon request.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex justify-end">
+        <button 
+          @click="docModal = false"
+          class="px-5 py-2 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-semibold rounded-lg transition-all"
+        >
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Script Initialization & Theme Toggle JS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Dark Mode Theme Toggle Logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Check saved theme preference or system preference
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      sunIcon.classList.remove('hidden');
+      moonIcon.classList.add('hidden');
+    } else {
+      document.documentElement.classList.remove('dark');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+    });
+
+    // Mobile Menu Drawer Toggle Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking nav links
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
